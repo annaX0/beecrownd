@@ -12,13 +12,14 @@ const getLine = () => {
     return lines.shift()
 }
 
-let vendedor = getLine() 
-let salario = parseFloat(getLine()) 
-let vendas = parseFloat(getLine()) 
-let total = salario + (vendas)*0.15
+let x = getLine();
 
-
-console.log("TOTAL = R$ " + total.toFixed(2))
-
-
-
+let qtd = 1
+    while (qtd <= 6) {
+        if(x % 2 != 0){
+            qtd++ 
+            console.log(x)
+        }
+        x++
+            
+    }

@@ -12,13 +12,16 @@ const getLine = () => {
     return lines.shift()
 }
 
-let vendedor = getLine() 
-let salario = parseFloat(getLine()) 
-let vendas = parseFloat(getLine()) 
-let total = salario + (vendas)*0.15
+let n = parseFloat(getLine()) 
+
+let horas  = Math.round(n/3600)
+let minutos  = Math.round((n%3600)/60)
+let segundos = Math.round(n%60)
 
 
-console.log("TOTAL = R$ " + total.toFixed(2))
+
+
+console.log(horas+":"+minutos+ ":"+ segundos)
 
 
 

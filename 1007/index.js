@@ -1,8 +1,25 @@
-let A = 5
-let B = 6
-let C = 7
-let D = 8
+var input = []
+try{
+    input = require('fs').readFileSync('/dev/stdin', 'utf8');
+    
+}catch (e){
+    input = require('fs').readFileSync('stdin', 'utf8');
+}
+
+var lines = input.split('\n');
+
+const getLine = () => {
+    return lines.shift()
+}
+
+let A = getLine() 
+let B = getLine() 
+let C = getLine() 
+let D = getLine() 
 
 let diferenca = (A * B - C * D)
 
-console.log(diferenca)
+
+console.log("DIFERENCA = " + diferenca)
+
+
