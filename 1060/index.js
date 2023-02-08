@@ -12,22 +12,14 @@ const getLine = () => {
     return lines.shift()
 }
 
-let idade = parseInt(getLine());
-let todos = []
+let qtd = 0
+    for (let i = 1; i <= 6; i++) {
+        let valor = parseFloat(getLine());
 
-    while(idade >= 0){
-        idade = getLine();
-        if(idade < 0){
-            break
+        if(valor >= 0){
+            qtd++
         }
-
-        todos.push(idade)
-        
-    //    todos += todos[idade]
-        
         
     }
-    console.log(todos)
-    
-    
-    
+    console.log(qtd + " valores positivos")
+
