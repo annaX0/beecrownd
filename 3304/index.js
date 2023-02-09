@@ -13,12 +13,18 @@ const getLine = () => {
 }
 
 
-let x = getLine();
+let x = parseInt(getLine());
 
 
-if(x.length >= 10){
-    console.log("palavraõ")
-} else{
-    console.log("palavrinha")
 
-}
+    for (let i = 1; i <= x; i++) {
+    let x = parseInt(getLine());
+
+    console.log("resposta " + i + ":" + x)
+        
+    }
+   
+
+  
+    
+    

@@ -12,13 +12,15 @@ const getLine = () => {
     return lines.shift()
 }
 
+let t = getLine();
+let n = [];
 
-let x = getLine();
-
-
-if(x.length >= 10){
-    console.log("palavraõ")
-} else{
-    console.log("palavrinha")
-
+for (let i = 0; i < 10; i++) {
+    let qtd = t-i
+    n.push(qtd)
+    console.log("N" + "[" +i +"]" + "=" + qtd)
+    
 }
+    
+    
+    

@@ -12,13 +12,17 @@ const getLine = () => {
     return lines.shift()
 }
 
-
 let x = getLine();
+let ho = []
 
-
-if(x.length >= 10){
-    console.log("palavraõ")
-} else{
-    console.log("palavrinha")
-
-}
+    for (let i = 1; i <= x; i++) {
+        ho.push("ho")
+        if(i == x){
+           ho.push("ho!")
+        }        
+    }
+    console.log(ho)
+    
+    
+    
+    

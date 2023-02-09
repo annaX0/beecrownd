@@ -12,13 +12,17 @@ const getLine = () => {
     return lines.shift()
 }
 
-
 let x = getLine();
+let n = []
 
 
-if(x.length >= 10){
-    console.log("palavraõ")
-} else{
-    console.log("palavrinha")
-
+for (let i = 0; i < x; i++) {
+    let x = getLine();
+    const word = x.split(' ');
+    let numeros = (word[1])
+    console.log(numeros)
 }
+
+  
+    
+    
