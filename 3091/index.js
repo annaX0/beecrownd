@@ -12,6 +12,11 @@ const getLine = () => {
     return lines.shift()
 }
 
-    let entrada = getLine()
 
-    
+let entrada = getLine();
+let entrada1 = getLine();
+
+let resto = entrada%entrada1;
+
+console.log(resto)
+

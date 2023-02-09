@@ -12,6 +12,12 @@ const getLine = () => {
     return lines.shift()
 }
 
-    let entrada = getLine()
+let arr = []
 
-    
+for (let i = 0; i < 4; i++) {
+        let entrada = parseInt(getLine());
+        
+        arr.push(entrada)
+    }
+
+    console.log(arr.indexOf(1)+1)

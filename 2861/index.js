@@ -12,6 +12,13 @@ const getLine = () => {
     return lines.shift()
 }
 
-    let entrada = getLine()
 
-    
+let entrada = getLine();
+
+    for (let i = 0; i < entrada; i++) {
+        let entrada = getLine();
+       console.log('gzuz')
+        
+        
+    }
+
